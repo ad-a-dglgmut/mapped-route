@@ -16,7 +16,7 @@ function Home(props) {
   return (
     <div className="min-h-screen bg-white">
       <div className="relative mx-auto">
-        <img src={CoverWebsite}></img>
+        <img src={CoverWebsite} alt=":("></img>
       </div>
       
 

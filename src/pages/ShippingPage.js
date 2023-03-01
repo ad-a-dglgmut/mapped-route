@@ -32,6 +32,10 @@ const ShippingPage = (props) => {
         case "Kosovo":
           setCargo((c)=>{return c=250});
           break;
+        
+        default:
+          setCargo((c)=>{return c=0});
+          break;
     }
   }
 
