@@ -8,7 +8,7 @@ const Items = (props) => {
     <div className="flex pb-5">
       <div>
         <Link to={props.link}>
-          <img src={props.picture} width="250px" height="250px"></img>
+          <img src={props.picture} width="250px" height="250px" alt=":("></img>
           <p className="text-xl text-center mt-3 hover:text-darkGrayishBlue text-black">
             {props.name}
           </p>

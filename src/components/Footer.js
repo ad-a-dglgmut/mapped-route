@@ -43,15 +43,14 @@ const Footer = () => {
           </div>
 
           <div className="flex justify-center space-x-4">
-            <a href="https://www.instagram.com/mappedroute/" target={"_blank"}>
-              <img src={ig} alt="" class="h-8 m-1" />
+            <a href="https://www.instagram.com/mappedroute/">
+              <img src={ig} alt=":(" class="h-8 m-1" />
             </a>
 
             <a
               href="https://www.facebook.com/profile.php?id=100090181692934"
-              target={"_blank"}
             >
-              <img src={fb} alt="" class="h-8 m-1" />
+              <img src={fb} alt=":(" class="h-8 m-1" />
             </a>
           </div>
         </div>
