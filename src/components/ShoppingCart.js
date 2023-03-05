@@ -13,7 +13,7 @@ const ShoppingCart = forwardRef((props, ref)=> {
     return (
       <Link to="/shippingpage">
         <div className="relative h-auto w-auto pl-4">
-          <img className="rounded-full z-30" src={bgimg} alt=":("></img>
+          <img className="rounded-full z-30" src={bgimg} alt=""></img>
           <div className="pl-12">
             <p className="bg-cyan-800 text-white text-sm w-5 text-center rounded-xl ">
               {number}
