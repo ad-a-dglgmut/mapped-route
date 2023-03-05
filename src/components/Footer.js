@@ -3,6 +3,8 @@ import ig from "../images/icon-instagram.svg";
 import Logotop from "../components/Logotop";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 const Footer = () => {
 
