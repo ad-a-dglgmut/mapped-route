@@ -5,39 +5,49 @@ import CheckoutItem from "../components/CheckoutItem";
 import ShippingInfo from "../components/ShippingInfo";
 import { useState } from "react";
 const ShippingPage = (props) => {
-  
-  const [cargo, setCargo] = useState('')
-  let combinedPrice=0;
-  for(let i =0;i<props.itemsForOrder.length-1;i++)
-  {
-    combinedPrice+=props.itemsForOrder[i].price;
+  const [cargo, setCargo] = useState("");
+  const onDeleteHandler = (itemID) => {
+    props.onDelete(itemID);
+  };
+  let combinedPrice = 0;
+  for (let i = 0; i < props.itemsForOrder.length - 1; i++) {
+    combinedPrice += props.itemsForOrder[i].price;
   }
   console.log(combinedPrice);
 
-  const countryInfo = (country) =>
-  {
-    switch(country) {
+  const countryInfo = (country) => {
+    switch (country) {
       case "Macedonia":
-        setCargo((c)=>{return c=150});
+        setCargo((c) => {
+          return (c = 150);
+        });
         break;
 
       case "Albania":
-        setCargo((c)=>{return c=250});
+        setCargo((c) => {
+          return (c = 250);
+        });
         break;
 
       case "Bulgaria":
-        setCargo((c)=>{return c=300});
+        setCargo((c) => {
+          return (c = 300);
+        });
         break;
-        
-        case "Kosovo":
-          setCargo((c)=>{return c=250});
-          break;
-        
-        default:
-          setCargo((c)=>{return c=0});
-          break;
+
+      case "Kosovo":
+        setCargo((c) => {
+          return (c = 250);
+        });
+        break;
+
+      default:
+        setCargo((c) => {
+          return (c = 0);
+        });
+        break;
     }
-  }
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -57,29 +67,31 @@ const ShippingPage = (props) => {
               name={items.name}
               price={items.price}
               itempic={items.pic}
-              key={items.link}
+              key={items.id}
+              id={items.id}
               size={items.size}
+              onDelete={onDeleteHandler}
             />
           ))}
-          <div
-            className="flex justify-between text-veryDarkBlue flex-row gap-x-11 mt-4 items-center"
-          >
+          <div className="flex justify-between text-veryDarkBlue flex-row gap-x-11 mt-4 items-center">
             <p className="font-normal text-lg">Order</p>
-            <div><p>{combinedPrice} ден</p></div>
+            <div>
+              <p>{combinedPrice} ден.items.link</p>
+            </div>
           </div>
-          <div
-            className="flex justify-between text-veryDarkBlue flex-row gap-x-11 mt-4 items-center"
-          >
-            <p className="font-normal text-lg">
-              Shipping fees
-            </p>
-            <div><p>{cargo} ден</p></div>
+          <div className="flex justify-between text-veryDarkBlue flex-row gap-x-11 mt-4 items-center">
+            <p className="font-normal text-lg">Shipping fees</p>
+            <div>
+              <p>{cargo} ден.</p>
+            </div>
           </div>
-          <div
-            className="flex justify-between text-veryDarkBlue flex-row gap-x-11 mt-4 items-center"
-          >
+          <div className="flex justify-between text-veryDarkBlue flex-row gap-x-11 mt-4 items-center">
             <p className="font-semibold text-xl">Total</p>
-            <div><p className="font-semibold text-xl">{cargo+combinedPrice} ден</p></div>
+            <div>
+              <p className="font-semibold text-xl">
+                {cargo + combinedPrice} ден.
+              </p>
+            </div>
           </div>
         </div>
         <div className="flex flex-col mb-32 mx-8 space-y-4 md:w-1/2">

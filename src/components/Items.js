@@ -13,7 +13,7 @@ const Items = (props) => {
             {props.name}
           </p>
           <p className="=text-lg text-center hover:text-darkGrayishBlue text-black">
-            ден {props.price}
+          {props.price} ден. 
           </p>
         </Link>
         <div className="flex justify-center">

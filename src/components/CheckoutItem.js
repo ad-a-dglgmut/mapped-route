@@ -1,7 +1,13 @@
 
 const CheckoutItem = (props) => {
+
+  const deleteHandler = () =>
+  {
+    props.onDelete(props.id);
+  }
+
   return (
-    <div className="flex gap-x-6 flex-row items-center">
+    <div className="flex gap-x-6 flex-row items-center" onClick={deleteHandler}>
       <img src={props.itempic} alt=":(" height="100px" width="100px" />
       <div className="space-y-2">
           <p className="text-xl font-semibold text-veryDarkBlue">

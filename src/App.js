@@ -20,13 +20,21 @@ function App() {
       });
       addNum((n) => { return n+1});
     } 
+
+   const deleteItem = (itemID) =>
+  {
+    itemAdd(itemData => {
+      const updatedData = itemData.filter(item => item.id !== itemID);
+      return updatedData;
+    });
+  }
   return (
     <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Home addItem={addItem} numOfItemsOrdered={numOfItemsOrdered}/>}/>
           <Route path="products/:productId" exact element={<Product numOfOrders={numOfItemsOrdered} productPageAddItem={addItem}/>}></Route>
-          <Route path="shippingpage" exact element={<ShippingPage numOfItemsOrdered={numOfItemsOrdered} itemsForOrder={itemsForOrder}/>}></Route>
+          <Route path="shippingpage" exact element={<ShippingPage numOfItemsOrdered={numOfItemsOrdered} itemsForOrder={itemsForOrder} onDelete={deleteItem}/>}></Route>
           <Route path="success" exact element={<SuccessPage/>}/>
         </Routes>
       </BrowserRouter>

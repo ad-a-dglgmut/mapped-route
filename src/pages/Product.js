@@ -6,7 +6,7 @@ import ShoppingCart from "../components/ShoppingCart";
 import { useRef, useState } from "react";
 
 const Product = (props) => {
-  const [size, changeSize] = useState("");
+  const [size, changeSize] = useState("M");
   const params = useParams();
   const items = homeData.find((items) => items.link === params.productId);
 
@@ -19,7 +19,7 @@ const Product = (props) => {
     event.preventDefault();
 
     const itemData = {
-      id: items.link,
+      id: Math.random(),
       link: `products/${items.link}`,
       price: items.price,
       name: items.name,
@@ -68,7 +68,7 @@ const Product = (props) => {
             <p className="text-base font-medium">Back To Shop</p>
           </Link>
           <p className="max-w-sm text-2xl font-semibold text-center text-veryDarkBlue md:text-left">
-            {items.price} ден
+            {items.price} ден.
           </p>
           <form>
             <div className="flex justify-center md:justify-start">

@@ -67,18 +67,23 @@ const Footer = () => {
           </p>
           <form onSubmit={sendEmail}>
             <div className="flex text-veryDarkBlue space-x-3">
-              <input
+            <input
                 type="text"
                 className="flex-1 px-4 my-4 rounded-full bg-veryLightGray focus:outline-none"
                 placeholder="Enter email"
                 onChange={getEmail}
               />
-              <button
-                className="px-4 font-bold text-veryDarkBlue rounded-full bg-veryLightGray hover:bg-white focus:outline-none"
-                type="submit"
+              <Popup
+                trigger={<button
+                  className="px-4 font-bold text-veryDarkBlue rounded-full bg-veryLightGray hover:bg-white focus:outline-none"
+                  type="submit"
+                >
+                  Send
+                </button>}
+                position="right center"
               >
-                Send
-              </button>
+                <div>Thank you for subscribing!</div>
+              </Popup>
             </div>
           </form>
 
