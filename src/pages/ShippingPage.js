@@ -76,7 +76,7 @@ const ShippingPage = (props) => {
           <div className="flex justify-between text-veryDarkBlue flex-row gap-x-11 mt-4 items-center">
             <p className="font-normal text-lg">Order</p>
             <div>
-              <p>{combinedPrice} ден.items.link</p>
+              <p>{combinedPrice} ден.</p>
             </div>
           </div>
           <div className="flex justify-between text-veryDarkBlue flex-row gap-x-11 mt-4 items-center">
