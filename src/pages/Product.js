@@ -81,16 +81,15 @@ const Product = (props) => {
               </button>
             </div>
             <p className="text-xl text-center text-veryDarkBlue md:text-left">
-              The Story of the product :{items.description}
+              {items.details}
             </p>
             <ul className="list-none space-y-1 text-darkGrayishBlue md:text-left">
-              <li>Materials: {items.materijal}</li>
               <li>Gender: {items.pol}</li>
               <li>Sizes available: {items.golemina}</li>
               <li>
                 <select className="select" onChange={onChangeSize}>
-                  <option disabled selected>
-                    Select your size
+                  <option selected>
+                    M
                   </option>
                   {items.golemina.map((sizes) => (
                     <option>{sizes}</option>

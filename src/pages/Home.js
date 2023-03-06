@@ -21,15 +21,17 @@ function Home(props) {
       
 
       <div className="container justify-center mx-auto w-full px-6 mt-12 space-y-0 md:space-y-0">
-        <div className="w-fit mx-auto">
+        <div className="w-fit mx-auto text-center">
           <h1 className="max-w-md text-4xl font-semibold text-veryDarkBlue text-center md:text-5xl ">
             Discover The Solar Collection
           </h1>
 
-          <p className="max-w-sm text-center text-veryDarkBlue">
+          <p className="max-w-sm text-center text-veryDarkBlue pl-7">
             Get ready to explore the universe with Mapped Route's first
             collection!
           </p>
+
+          <h2 className="text-red-600">(PREORDER PRICES AND MOCKUP PICTURES)</h2>
         </div>
       </div>
       <div className="container flex flex-col px-4 mx-auto mt-10 space-y-12 justify-center md:space-y-0 md:flex-row">

@@ -19,7 +19,7 @@ const Items = (props) => {
         <div className="flex justify-center">
         <Link to={props.link}>
         <button className="btn w-30 bg-veryDarkBlue text-white rounded-full">
-            ORDER
+            PREORDER
         </button>
         </Link>
         
