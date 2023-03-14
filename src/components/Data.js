@@ -17,11 +17,11 @@ export const homeData = [
     btnlink: "#",
     picture: mercury,
     name: "Mercury",
-    price: 1899,
+    price: 1399,
     itempic:front,
-    materijal:"Cotton",
+    materijal:"100% Cotton",
     pol:"Unisex",
-    golemina:["XL ", "L ", "M ", "S "],
+    golemina:["L ", "M "],
     details:"Mercury : This hoodie is perfect for the intrepid traveler who's always on the move! With its bold graphic inspired by the swift planet Mercury, this hoodie will keep you feeling fast and free no matter where you go."
   },
   
@@ -30,11 +30,11 @@ export const homeData = [
     btnlink: "#",
     picture: venus,
     name: "Venus",
-    price: 1899,
+    price: 1399,
     itempic:front,
-    materijal:"Cotton",
+    materijal:"100% Cotton",
     pol:"Unisex",
-    golemina:["XL ", "L ", "M ", "S "],
+    golemina:["L ", "M "],
     details:"Venus : With a graphic inspired by the planet of love and beauty, the Venus hoodie is the perfect choice for those who like to take charge and chart their own course. With its luxurious design and bold statement, this hoodie is sure to turn heads and inspire confidence."
   },
 
@@ -43,24 +43,24 @@ export const homeData = [
     btnlink: "#",
     picture: earth,
     name: "Earth",
-    price: 1899,
+    price: 1399,
     itempic:front,
-    materijal:"Cotton",
+    materijal:"100% Cotton",
     pol:"Unisex",
-    golemina:["XL ", "L ", "M ", "S "],
+    golemina:["L ", "M "],
     details:"Earth : The Earth hoodie is perfect for those who value comfort, warmth, and the feeling of being at home. With its graphic inspired by the planet we call home, this hoodie will keep you cozy and grounded on all your adventures."
   },
 
   {
     link: "p4",
     btnlink: "#",
-    picture: marsBack,
+    picture: mars,
     name: "Mars",
-    price: 1899,
-    itempic:mars,
-    materijal:"Cotton",
+    price: 1399,
+    itempic:marsBack,
+    materijal:"100% Cotton",
     pol:"Unisex",
-    golemina:["XL ", "L ", "M ", "S "],
+    golemina:["L ", "M "],
     details:"Mars : This hoodie is for the trailblazers and rule-breakers who like to redefine what's possible. With a graphic inspired by the planet of war and passion, the Mars hoodie will inspire you to take risks, challenge yourself, and carve out your own unique path in life."
   },
 
@@ -69,11 +69,11 @@ export const homeData = [
     btnlink: "#",
     picture: jupiter,
     name: "Jupiter",
-    price: 1899,
+    price: 1399,
     itempic:front,
-    materijal:"Cotton",
+    materijal:"100% Cotton",
     pol:"Unisex",
-    golemina:["XL ", "L ", "M ", "S "],
+    golemina:["L ", "M "],
     details:"Jupiter :  The Jupiter hoodie is for those who love to dream big and aim high. With its graphic inspired by the largest planet in our solar system, this hoodie will inspire you to explore new horizons, expand your mind, and aim for the stars."
   },
 
@@ -82,11 +82,11 @@ export const homeData = [
     btnlink: "#",
     picture: saturn,
     name: "Saturn",
-    price: 1899,
+    price: 1399,
     itempic:front,
-    materijal:"Cotton",
+    materijal:"100% Cotton",
     pol:"Unisex",
-    golemina:["XL ", "L ", "M ", "S "],
+    golemina:["L ", "M "],
     details:"Saturn : The Saturn hoodie is perfect for the thrill-seekers and adventure junkies! With a graphic inspired by the planet of rings, this hoodie will add a touch of cosmic glamour to all your escapades, whether you're hiking, camping, or just exploring the city."
   },
 
@@ -95,11 +95,11 @@ export const homeData = [
     btnlink: "#",
     picture: uranus,
     name: "Uranus",
-    price: 1899,
+    price: 1399,
     itempic:front,
-    materijal:"Cotton",
+    materijal:"100% Cotton",
     pol:"Unisex",
-    golemina:["XL ", "L ", "M ", "S "],
+    golemina:["L ", "M "],
     details:"Uranus : This hoodie is for the curious and open-minded who love to explore the unknown. With a graphic inspired by the planet of unpredictability, Uranus, this hoodie will inspire you to embrace change, take risks, and discover new frontiers."
   },
 
@@ -108,11 +108,11 @@ export const homeData = [
     btnlink: "#",
     picture: neptune,
     name: "Neptune",
-    price: 1899,
+    price: 1399,
     itempic:front,
-    materijal:"Cotton",
+    materijal:"100% Cotton",
     pol:"Unisex",
-    golemina:["XL ", "L ", "M ", "S "],
+    golemina:["L ", "M "],
     details:"Neptune : The Neptune hoodie is perfect for the dreamers and mystics who like to explore the depths of their imagination. With a graphic inspired by the planet of illusions and deep sea mysteries, this hoodie will transport you to otherworldly realms and inspire you to navigate the depths of your own mind."
   },
 ];

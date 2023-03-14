@@ -31,7 +31,7 @@ function Home(props) {
             collection!
           </p>
 
-          <h2 className="text-red-600">(PREORDER PRICES AND MOCKUP PICTURES)</h2>
+          {/*<h2 className="text-red-600">(PREORDER PRICES AND MOCKUP PICTURES)</h2>*/}
         </div>
       </div>
       <div className="container flex flex-col px-4 mx-auto mt-10 space-y-12 justify-center md:space-y-0 md:flex-row">

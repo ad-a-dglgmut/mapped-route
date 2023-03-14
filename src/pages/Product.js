@@ -77,7 +77,7 @@ const Product = (props) => {
                 onClick={onNumChange}
                 type="submit"
               >
-                ORDER
+                ADD TO CART
               </button>
             </div>
             <p className="text-xl text-center text-veryDarkBlue md:text-left">
@@ -86,6 +86,7 @@ const Product = (props) => {
             <ul className="list-none space-y-1 text-darkGrayishBlue md:text-left">
               <li>Gender: {items.pol}</li>
               <li>Sizes available: {items.golemina}</li>
+              <li>Material: {items.materijal}</li>
               <li>
                 <select className="select" onChange={onChangeSize}>
                   <option selected>
